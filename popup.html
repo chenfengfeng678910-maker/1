@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 300px; padding: 15px; font-size: 14px; }
+    .box { margin: 10px 0; }
+    button { width: 100%; padding: 10px; border: none; border-radius: 5px; cursor: pointer; margin-top: 5px; }
+    #saveBtn { background: #4285F4; color: white; }
+    #startBtn { background: #0F9D58; color: white; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <label>选择要上传的文件：</label>
+    <input type="file" id="fileSelect">
+  </div>
+  <div class="box">
+    <button id="saveBtn">保存文件配置</button>
+  </div>
+  <div class="box">
+    <button id="startBtn">立即自动上传</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
