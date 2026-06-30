@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Flow自动上传",
+  "version": "1.0",
+  "description": "Google Flow一键自动上传文件",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_width": 320,
+    "default_height": 180
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://flow.google.com/*", "https://labs.google/fx/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
